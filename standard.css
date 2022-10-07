@@ -1,0 +1,160 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.container {
+    width:60%;
+    margin-left: auto;
+	margin-right: auto;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    background-color: #0077b6;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFF;
+}
+
+/* -- Site Navigation -- */
+.site-nav {
+    min-height:60px;
+}
+
+.site-nav ul {
+    display: flex;
+    margin:0;
+	padding:0;
+    flex-wrap: wrap;
+}
+
+.site-nav li {
+	list-style: none;
+    padding:15px;
+    box-sizing: border-box;
+}
+
+.site-nav li a {
+    display: flex;
+    color: #FFF;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.site-nav a:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .site-nav ul { 
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
+    .site-nav li {
+        flex: 0 1 49.5%;
+        text-align: center;
+    }
+    .site-nav li a {
+        font-size: 150%;
+    }
+    .site-nav svg {
+        height: auto;
+    }
+    .site-nav li:nth-child(1), .site-nav li:nth-child(2) {
+        margin-bottom: 1%;
+    }
+}
+/* -- End Site Navigation -- */
+
+/* -- Resume Items -- */
+.container .resume-section-title:nth-child(1) {
+    border-top: none;
+    /* This prevents a slight line below the banner due to the border rule on resume-items. */
+}
+
+.resume-section-title {
+    border-top: 2px solid #0077b6;
+    border-left: 15px solid #0077b6;
+    margin:0;
+}
+.resume-section-title h4 {
+    margin: 0;
+    padding: 5px;
+}
+
+.resume-content {
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    border-left: 4px solid #0077b6;
+}
+
+.resume-content .resume-item:nth-child(1) {
+    margin-top: 0px;
+    padding-top: 0px;
+} 
+
+.resume-item {
+    color: #000;
+    margin-left: 10px;
+}
+
+.resume-item p {
+    margin: 0 0 10px 0;
+}
+
+.resume-item h3 {
+    margin: 5px 0px 10px;
+}
+
+.work-duration {
+    font-weight: normal;
+    font-size: 70%;
+}
+
+.job-title {
+    font-size: 85%;
+}
+
+.important-text {
+    font-weight: bold;
+}
+
+.container .resume-content:last-of-type{
+    /* Adds some extra space for last item so it's easier to read. */
+    padding-bottom: 30px;
+}
+/* -- End Resume Items -- */
