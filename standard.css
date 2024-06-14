@@ -141,12 +141,11 @@ header {
 }
 
 .work-duration {
-    font-weight: normal;
     font-size: 70%;
 }
 
-.job-title {
-    font-size: 85%;
+.employer-info {
+    font-size: 80%;
 }
 
 .important-text {
